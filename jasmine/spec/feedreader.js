@@ -52,6 +52,8 @@ $(function() {
             });
         });
 
+        // Check to see if there is more than one feed displayed
+        // used vanilla Javascript instead of JQuery to learn something new :)
         it('are populated',function(done) {
             var entrycount = document.getElementsByClassName('feed')[0].getElementsByClassName('entry').length;
             expect(entrycount).toBeGreaterThan(0);
