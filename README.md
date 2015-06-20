@@ -3,7 +3,7 @@ This project is the 6th project in Udacity Frontend Web developer nanodegree.  I
 
 With the Jasmine library integrated into the page, a web developer can write tests against the site, and see the test results right in the site, or in another page depending on how the project is set up. For this project the test results are displayed directly in the main page of the app.
 
-View the page and results here: []()
+View the page and results here: [http://http://degathem.github.io/neighborhood-map/](http://degathem.github.io//)
 
 ## Resources Used:
 * [Jasmine 2.2 Documentation](http://jasmine.github.io/2.2/introduction.html)
