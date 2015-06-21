@@ -79,39 +79,39 @@ $(function() {
             randomFeedIndexSecond = getRandomInt(0,feedLength);
         }
 
-        var headerHtmlFirst;
-        var headerHtmlSecond;
+        var headerHtml;
+        var feedHtml;
 
-        var feedHtmlFirst;
-        var feedHtmlSecond;
 
         // Before each spec load 2 random feeds and set dom html for the header and feeds
         beforeEach(function(done) {
+            $('.header-title').empty();
+            $('.feed').empty();
             loadFeed(randomFeedIndexFirst, function(){
-                headerHtmlFirst = $('.header').html();
-                feedHtmlFirst = $('.feed').html();
+                headerHtml = $('.header-title').html();
+                feedHtml = $('.feed').html();
+
+                loadFeed(randomFeedIndexSecond, function() {
+                    done();
+                });
             });
 
-            loadFeed(randomFeedIndexSecond, function() {
-                headerHtmlSecond = $('.header').html();
-                feedHtmlSecond = $('.feed').html();
-                done();
-            });
+
         });
 
         // Reset page content to original feed
-        afterEach(function(){
+        afterAll(function(){
             loadFeed(0);
 
         });
 
         it('should change header content html', function(done) {
-            expect(headerHtmlFirst).not.toEqual(headerHtmlSecond);
+            expect(headerHtml).not.toEqual($('header-title').html());
             done();
         });
 
         it('should change feed links and descriptions', function(done) {
-            expect(feedHtmlFirst).not.toEqual(feedHtmlSecond);
+            expect(feedHtml).not.toEqual($('.feed').html());
             done();
         });
     });
