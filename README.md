@@ -3,7 +3,13 @@ This project is the 6th project in Udacity Frontend Web developer nanodegree.  I
 
 With the Jasmine library integrated into the page, a web developer can write tests against the site, and see the test results right in the site, or in another page depending on how the project is set up. For this project the test results are displayed directly in the main page of the app.
 
-View the page and results here: [http://http://degathem.github.io/frontend-nanodegree-feedreader/](http://degathem.github.io/frontend-nanodegree-feedreader/)
+The web app has a number of suites of tests performed, which include:
+* Ensure that RSS Feeds are defined, have urls, and are named
+The feed selector menu is hidden by default and changes visibility (i.e. is toggled) when clicked.
+* Initial Entries are populated when the page loads.
+* New Feed Selection should change the header tile and should change feed links and descriptions.
+
+View the page and results here: [http://degathem.github.io/frontend-nanodegree-feedreader/](http://degathem.github.io/frontend-nanodegree-feedreader/)
 
 ## Resources Used:
 * [Jasmine 2.2 Documentation](http://jasmine.github.io/2.2/introduction.html)

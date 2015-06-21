@@ -74,7 +74,7 @@ $(function() {
         var randomFeedIndexFirst = getRandomInt(0,feedLength);
         var randomFeedIndexSecond = getRandomInt(0,feedLength);
 
-        // Ensure feed indexs are different
+        // Ensure feed indexes are different
         while (randomFeedIndexFirst === randomFeedIndexSecond) {
             randomFeedIndexSecond = getRandomInt(0,feedLength);
         }
